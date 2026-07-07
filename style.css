@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw; 
+    height: 100%;
+    overflow-x:none;
+    background: #abbaab;
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  
+    background: linear-gradient(to right, #ffffff, #abbaab); 
+
+}
+
+nav{
+    width: 100%;  
+    padding: 2rem; 
+}
+
+.navcontainer{
+    width: 100vw;
+    background-image: linear-gradient( 90.2deg,  rgba(1,47,95,1) -0.4%, rgba(56,141,217,1) 106.1% );
+
+    min-height: 80px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+} 
+
+
+#navlist {
+    margin-right:15px;
+    margin-left: 15px;
+    list-style: none;
+    display: flex;
+    font-size: 2.5rem;
+    justify-content: space-between;
+} 
+#logo {
+    font-size: 2.8rem;
+    color:beige;
+
+}
+
+a{
+    text-decoration: none;
+    color:beige;
+}
+
+#item{
+    display: flex;
+    gap: 40px;
+}
+
+ .footerbox{
+   background-image: linear-gradient( 90.2deg,  rgba(1,47,95,1) -0.4%, rgba(56,141,217,1) 106.1% );
+    color:beige;
+    text-align: center;
+    width: 100%;
+    min-height: 40px;
+
+ }
+
+ .footerbox p{
+
+    color:beige;
+    font-size: 40px;
+ }
+
+.contentbox{
+    width:50%;
+    margin: auto;
+    /* border: 1px solid black; */
+    background-color:whiite;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.627);
+    padding: 40px;
+}
+
+.item1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+.rightbox img{
+    height: 300px;
+    width: 300px;
+}
+
+.rightbox:hover{
+    transform: scale(1.1);
+    transition: all 0.6s linear 0s;
+}
+
+.leftbox{
+    /* margin: 20px; */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+    
+.rightbox{
+    /* margin: 20px;
+    padding: 50px; */
+    position: relative;
+    overflow: hidden;
+
+}
+
+.rightbox img{
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.leftbox h2{
+    font-size: 2rem;
+
+}
+
+.incredient{
+    font-size: 1.3rem;
+}
+
+.recipe{
+    font-size: 1.1rem;
+    width: 50%;
+}
+
+ol li{
+    width: 150%;
+}
+
+ .rightbox .overlay{
+
+    position: absolute; 
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(161, 157, 157, 0.568);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 20px;
+     opacity: 0;
+
+
+ }
+
+
+ .rightbox .overlay span{
+    color:rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: bold;
+   
+   
+ }
+
+ .rightbox:hover .overlay{
+    opacity: 1;
+    transition: all 0.6s linear 0s;
+ }
